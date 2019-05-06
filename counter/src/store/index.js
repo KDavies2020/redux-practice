@@ -3,7 +3,8 @@ import { createStore } from 'redux';
 const initialState = {
     count: 3
 };
-
+// this reducer is where the actual functionalty of each action is determind.
+//broken down by action.type
 const reducer = (state = initialState, action) => {
     console.log('reducer running', action);
 
@@ -17,7 +18,7 @@ const reducer = (state = initialState, action) => {
     
 }
 
-
+// must create and export out store. 
 const store = createStore(reducer);
 
 export default store;
