@@ -2,11 +2,12 @@ import React from 'react';
 import Counter from './Counter.js'
 
 import './App.css';
+import store from './store/';
 
 function App() {
   return (
     <div className="App">
-      <Counter count="5"/>
+      <Counter store={store}/>
       
     </div>
   );
